@@ -1,0 +1,24 @@
+import java.util.*;
+class StrinGpalindome {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        String str ;
+        str=in.nextLine();
+        int f,l;
+        f=0;
+        l=str.length()-1;
+        while(f<=l){
+            if(str.charAt(f)==str.charAt(l)){
+                f++;
+                l--;
+                continue;
+            }else{
+                System.out.println(false);
+                break;
+            }
+        }
+        if(f>=l){
+            System.out.println(true);
+        }
+    }
+}
